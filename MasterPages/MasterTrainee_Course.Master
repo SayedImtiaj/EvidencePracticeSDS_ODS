@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterTrainee_Course.master.cs" Inherits="EvidencePracticeSDS_ODS.MasterPages.MasterTrainee_Course" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <h1>
+                Trainee-Course ReleationShip Implemented With Master-Content-UserControl
+            </h1>
+        </header>
+        <nav>
+            
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal">
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+            <%--<asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                </asp:SiteMapPath>--%>
+        </nav>
+        <section>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </section>
+        <aside>
+
+        </aside>
+        <footer>
+
+        </footer>
+    </form>
+</body>
+</html>
